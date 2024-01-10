@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten your URL</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+ 
+</head>
+<body>
+
+    <!-- <span class="alert p-2 rounded-md" data-alert="success">hello</span> -->
+ 
+    <section class="pt-16">
+        <div class="container lg:px-0">
+            <h1 class="text-4xl font-semibold">Shorten your URL</h1>
+            <form action="/create" id="form" class=" mt-8">
+                <div class="flex flex-col sm:flex-row sm:justify-between gap-4 mb-4">
+                        <div class="sm:w-2/4">
+                            <label for="site" class="inline-block mb-1">Your URL</label>
+                            <input type="text" name="site" placeholder="https://www.site.com" autocomplete="off" id="site" class="w-full border-2 p-2 rounded-md">
+                        </div>
+                        <div class="sm:w-2/4">
+                            <label for="expiration" class="inline-block mb-1">Expired at</label>
+                            <input type="datetime-local" name="expiration" id="expiration" class="w-full border-2 p-2 rounded-md ">
+                        </div>
+
+                </div>
+                
+                <input type="submit" value="Create url" id="button" disabled class="bg-violet-950 text-white px-10 py-2 cursor-pointer rounded-md disabled:opacity-30">
+            </form>
+        </div>
+    </section>
+    <section>
+        <div class="container lg:px-0 pt-8">
+           <div>List: <span id="amount"></span></div>
+           <ul class="mt-4" id="list">
+            <!-- <li class="link-ctn bg-violet-200 rounded-md p-4 my-1 w-full flex justify-between">
+                <a href="${link.url}" target="_blank">${link.id}</a>
+                <span class="copy material-symbols-outlined cursor-pointer text-gray-600">Link</span>
+            </li> -->
+           </ul>
+        </div>
+        
+        
+    </section>
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>

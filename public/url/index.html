@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorten your URL</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+ 
+</head>
+<body> 
+    <section class="pt-16">
+            <div class="container lg:px-0">
+                <div class="card max-w-md mx-auto">
+                    <div class="info mb-4">
+                        <div class="p-2 mb-1"><span class="text-gray-500">Shorten URL:</span> <a href="" target="_blank">hello</a></div>
+                        <div class="p-2 mb-1"><span class="text-gray-500">Website: </span><span>hello.site</span></div>
+                        <div class="p-2 mb-1"><span class="text-gray-500">Created at:</span> <span></span></div>
+                        <div class="p-2 rounded-md hover:border-2" id="expired-date-span-ctn"> <span class="text-gray-500">Expired at:</span> <span id="expired-date-span">2023-06-16 08:47:00</span></div>
+                        <div class="hidden" id="expiration-input-ctn">
+                            <label for="expiration" class="sr-only">Expired at</label>
+                            <input type="datetime-local"name="expiration" id="expiration-input" class="w-full border-2 p-2 rounded-md disabled:bg-gray-200 disabled:text-gray-500">
+                        </div>
+                    </div>
+                    <div class=" flex justify-end">
+                        <button class="deletebtn p-1 inline-flex rounded-sm">
+                            <span class="material-symbols-outlined">Delete</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script type="module" src="../assets/js/app.js"></script>
+</body>
+</html>
